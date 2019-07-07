@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Character: Decodable {
+struct Character: Codable {
     
     let name: String
     let status: String
@@ -24,13 +24,13 @@ struct Character: Decodable {
     
 }//END OF STRUCT
 
-struct TopLevelDictionary: Decodable {
+struct TopLevelDictionary: Codable {
     
     let results = [Character]
     
 }//END OF STRUCT
 
-struct Origin: Decodable {
+struct Origin: Codable {
     
     let planetName: String
     
