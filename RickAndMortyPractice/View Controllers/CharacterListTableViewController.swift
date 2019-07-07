@@ -14,9 +14,12 @@ class CharacterListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         CharacterController.shared.getCharacters {
-            print("We got our characters!")
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
+    
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

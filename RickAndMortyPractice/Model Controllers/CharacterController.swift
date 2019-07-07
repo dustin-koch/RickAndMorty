@@ -16,7 +16,7 @@ class CharacterController {
     
     //MARK: - Properties
     var characterList: [Character] = []
-    let baseURLString = "https://rickandmortyapi.com/api/"
+    let baseURLString = "https://rickandmortyapi.com/api"
     let characterString = "character"
     
     //URL I WANT TO MAKE
@@ -26,7 +26,6 @@ class CharacterController {
     func getCharacters(completion: @escaping () -> Void) {
         //Make the URL
         guard var baseURL = URL(string: baseURLString) else { return }
-//        let components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         baseURL.appendPathComponent(characterString)
         print("\(baseURL)")
         //Get info from the URL
@@ -39,8 +38,10 @@ class CharacterController {
             //Turn data into Rick and Morty Characters
             let jsonDecoder = JSONDecoder()
             do {
-                let characters = try jsonDecoder.decode([Character].self, from: data)
+                let charactersDictionary = try jsonDecoder.decode(TopLevelJSON.self, from: data)
+                let characters = charactersDictionary.results
                 self.characterList = characters
+                completion()
             } catch {
                 print("There was an error with the jsonDecoder: \(error.localizedDescription)")
                 return

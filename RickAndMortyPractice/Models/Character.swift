@@ -8,7 +8,17 @@
 
 import Foundation
 
-struct Character: Codable {
+struct Origin: Decodable {
+    
+    let planetName: String
+    
+    enum CodingKeys: String, CodingKey {
+        case planetName = "name"
+    }
+    
+}//END OF STRUCT
+
+struct Character: Decodable {
     
     let name: String
     let status: String
@@ -24,18 +34,8 @@ struct Character: Codable {
     
 }//END OF STRUCT
 
-struct TopLevelDictionary: Codable {
+struct TopLevelJSON: Decodable {
     
-    let results = [Character]
-    
-}//END OF STRUCT
-
-struct Origin: Codable {
-    
-    let planetName: String
-    
-    enum CodingKeys: String, CodingKey {
-        case planetName = "name"
-    }
+    let results: [Character]
     
 }//END OF STRUCT
