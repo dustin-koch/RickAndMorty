@@ -11,6 +11,7 @@
 		CA43F0E922D2724A00EBFFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA43F0E722D2724A00EBFFD1 /* Main.storyboard */; };
 		CA43F0EB22D2724B00EBFFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA43F0EA22D2724B00EBFFD1 /* Assets.xcassets */; };
 		CA43F0EE22D2724B00EBFFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA43F0EC22D2724B00EBFFD1 /* LaunchScreen.storyboard */; };
+		CA43F0F822D275AA00EBFFD1 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA43F0F722D275AA00EBFFD1 /* CharacterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		CA43F0EA22D2724B00EBFFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA43F0ED22D2724B00EBFFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA43F0EF22D2724B00EBFFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA43F0F722D275AA00EBFFD1 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				CA43F0E722D2724A00EBFFD1 /* Main.storyboard */,
+				CA43F0F722D275AA00EBFFD1 /* CharacterTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA43F0E422D2724A00EBFFD1 /* AppDelegate.swift in Sources */,
+				CA43F0F822D275AA00EBFFD1 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
