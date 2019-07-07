@@ -81,6 +81,7 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="dyT-kM-HWo" id="Tab-O0-VO5"/>
                             <outlet property="delegate" destination="dyT-kM-HWo" id="uuR-XC-s8U"/>
